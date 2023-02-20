@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      {%for item in mylist%}
+      <li>{{item}}</li>
+      {%endfor%}
+    </ul>
+
+    {% if 'PRIYA'in mylist%}
+      <p>Found you PRIYA!</p>
+    {%else%}
+      <p>PRIYA! not in the list</p>
+    {%endif%}
+
+<!-- it is already a boolean ! -->
+    {%if user_logged_in%}
+      <p>hey,Priya Welcome!</p>
+    {%else%}
+      <p>Where is Priya!</p>
+    {%endif%}
+  </body>
+</html>

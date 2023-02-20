@@ -1,0 +1,7 @@
+{%extends "base.html"%}
+{% block content%}
+<!-- {{name|capitalize}} it is a name and capitalize is filter applied
+ on name -->
+<h1>The name of the page is {{name|capitalize}}</h1>
+<a href="{{ url_for('static', filename='puppy_pic.jpg')}}">Click Here!</a>
+{%endblock%}
